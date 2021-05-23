@@ -31,7 +31,7 @@ Electron.js Application for Raspberry Pi
 
 1. Clone the repo
 ```sh
-git clone git@github.com:boraciner/electron-gpio.git
+git clone https://github.com/boraciner/electron-gpio
 ```
 2. Install NPM packages
 ```sh
