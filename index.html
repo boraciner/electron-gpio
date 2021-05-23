@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+ 
+<!-- Bootstrap Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </head>
+<body style="background: white;">
+    <div style="margin: 20px;">
+    <button type="button" id="OnButton" class="btn-lg btn-success">ON</button>
+    <button type="button" id="OffButton" class="btn-lg btn-danger">OFF</button>
+    </div>
+    <script>
+        const { ipcRenderer } = require('electron')
+
+        document.getElementById("OnButton").addEventListener("click", ()=>{
+            ipcRenderer.send('GPIO', 'ON')
+        })
+        
+        document.getElementById("OffButton").addEventListener("click", ()=>{
+            ipcRenderer.send('GPIO', 'OFF')
+        })
+        
+    </script>
+
+    
+</body>
+</html>
