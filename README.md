@@ -11,7 +11,7 @@
 <p align="center">
   
    <img src="https://miro.medium.com/max/972/1*O6KluMvEBZ1cBL3EPo4tig.png" alt="Logo" width="30" height="30">
-  
+   <img src="assets/Video_2021-05-30_110753.gif" alt="Logo" width="380" height="404">
 
   <h3 align="center">Raspberry Pi On/Off GPIO Ports - Electron.Js</h3>
 
